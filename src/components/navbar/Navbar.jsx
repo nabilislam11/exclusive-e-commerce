@@ -18,9 +18,9 @@ const Navbar = () => {
                 <li className='font-secondary font-normal  text-[16px] leading-[24px]   text-black'><a href="">Sign Up</a></li>
              </ul>
                 </div>
-                <div className="bg-gray-400  flex items-center gap-x-8 rounded ">
-                 <input className=' py-[10px] pl-[20px] '  type="text" placeholder='What are you looking for?' />
-                 <CiSearch className=' pr-3 text-black size-8' />
+                <div className="bg-gray-100  flex items-center gap-x-8 rounded ">
+                 <input className='text-[#363738] py-[10px] pl-[20px] '  type="text" placeholder='What are you looking for?' />
+                 <CiSearch className=' pr-3 text-black size-10 ' />
                 </div>
 
             </div>
