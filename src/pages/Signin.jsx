@@ -15,7 +15,7 @@ const Signin = () => {
         <Navbar></Navbar>
         <div className="flex justify-between relative">
           <div className="">
-            <img className=' absolute top-[60px] left-[-350px] ' src={signin} alt="" />
+            <img className=' absolute top-[60px] left-[-200px] ' src={signin} alt="" />
           </div>
           {/* left part  */}
           <div className="pt-[185px] w-[371px]  pb-[256px] ">
