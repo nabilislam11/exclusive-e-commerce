@@ -8,11 +8,13 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
 import { FaFacebookF } from "react-icons/fa";
+
+import { MdCopyright } from 'react-icons/md';
 const Footer = () => {
   return (
-    <div className='bg-black pt-[80px] pb-[60px]  '>
+    <div className='bg-black pt-[80px]  '>
       <Container>
-        <div className="flex justify-between ">
+        <div className="flex justify-between pb-[60px] ">
           {/* left part */}
           <div className="w-[20%] ">
             <div className="flex flex-col gap-y-24px pb-[16px] ">
@@ -72,6 +74,10 @@ const Footer = () => {
                 <a href=""><FaLinkedinIn  size={25} color='white' /></a>
               </div>
           </div>
+        </div>
+        <div className="flex items-center text-center justify-center gap-x-1.5 pt-[16px] pb-[24px] border-t border-gray-800   ">
+         <a href=""><MdCopyright size={25} color='#363738' /></a>
+          <p  className='font-primary  font-medium  text-[16px]   text-[#363738] '>Copyright Nabil 2022. All right reserved</p>
         </div>
 
       </Container>
