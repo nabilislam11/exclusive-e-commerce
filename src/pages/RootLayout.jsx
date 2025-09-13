@@ -9,17 +9,11 @@ import Footer from '../components/footer/Footer'
 const RootLayout = () => {
   return (
     <div>
-        <Tophead/>
-       <Container>
-        <Navbar/>
+      <Tophead />
 
-
-        <div className="min-h-[80vh]">
-            <Outlet/>
-            </div>            
-
-       </Container>
-      <Footer/>
+      <Navbar />
+      <Outlet />
+      <Footer />
     </div>
   )
 }

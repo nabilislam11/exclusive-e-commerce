@@ -8,9 +8,10 @@ import { FcGoogle } from 'react-icons/fc';
 const Login = () => {
   return (
    <div className=' '>
-      <Tophead></Tophead>
+      <Tophead/>
+      <Navbar/>
       <Container>
-        <Navbar></Navbar>
+       
         <div className="flex justify-between relative">
           <div className="">
             <img className=' absolute top-[60px] left-[-200px] ' src={signin} alt="" />

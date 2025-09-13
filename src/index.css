@@ -4,3 +4,5 @@
   --font-secondary: "Poppins", sans-serif;
 }
 @import "tailwindcss";
+@import 'flowbite';
+@import 'swiper/css';

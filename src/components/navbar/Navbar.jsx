@@ -1,11 +1,13 @@
 import React from 'react'
 import { CiSearch } from "react-icons/ci";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import Container from '../container/Container';
 
 const Navbar = () => {
   return (
-    <div>
-        <div className="pt-[38px] pb-[16px] border-b-1 border-gray-400 ">
+    <div className=' border-b-1 border-gray-400 '>
+        <Container>
+          <div className="pt-[38px] pb-[16px] ">
             <div className="flex justify-between items-center">
                 <div className="py-[7px] ">
                     <h1 className='font-primary  font-bold text-[24px] leading-[24px] '>Exclusive</h1>
@@ -25,6 +27,7 @@ const Navbar = () => {
 
             </div>
         </div>
+        </Container>
     </div>
   )
 }
