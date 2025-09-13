@@ -54,15 +54,18 @@ const Categoris = () => {
         ]
     };
     return (
-        <div>
+        <div className='border-b-1 border-gray-400 pt-[80px] '>
             <Container>
 
                 {/* categoris__part*/}
-                <div className="w-[100px] h-[70px] flex items-center group pb-[40px]">
-                    <div className="w-[18px] h-full bg-red-500 rounded group-hover:w-full group-hover:bg-red-500 transition-all duration-300 ">
-                        <p className='font-secondary font-semibold text-[16px] leading-[20px] text-red-500 group-hover:text-white pl-[26px] py-[8px] transition-all duration-300
-            '>Today's</p>
-                    </div>
+                <div class="relative inline-block group h-[30px]  overflow-hidden rounded-md">
+
+                    <div class="absolute top-0 left-0 h-full w-3 bg-red-500 transition-all duration-500 group-hover:w-full"></div>
+
+
+                    <span class="relative z-10 px-4 py-2 font-semibold text-red-500 transition-colors duration-500 group-hover:text-white">
+                        Categories
+                    </span>
                 </div>
                 {/* Browser__by */}
                 <div className="flex gap-[87px] items-center pt-[24px] pb-[40px] ">
@@ -71,7 +74,7 @@ const Categoris = () => {
                 </div>
                 {/* slider_catagoris */}
 
-                <div className="slider-container">
+                <div className="slider-container pb-[40px] ">
                     <Slider {...settings}>
                         <div>
                             <div className="group w-[170px] h-[145px] bg-white flex flex-col items-center rounded justify-center gap-y-[16px] hover:bg-[#DB4444] transition-all duration-300 ">
