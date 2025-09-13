@@ -95,29 +95,9 @@ const FlashSale = () => {
           </div>
         </div>
         {/* product_card */}
-        {/* <div className="w-[270px] h-[350px] ">
-          <img src={product} alt="" />
-          <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
-          <div className="flex items-center gap-x-[12px] pb-[8px] ">
-            <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
-            <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
-          </div>
-          <div className="flex items-center gap-x-[8px]">
-            <div className="flex items-center">
-              <FaStar className=' text-yellow-500 size-5  ' />
-              <FaStar className=' text-yellow-500 size-5  ' />
-              <FaStar className=' text-yellow-500 size-5  ' />
-              <FaStar className=' text-yellow-500 size-5  ' />
-              <FaStar className=' text-yellow-500 size-5  ' />
 
-
-            </div>
-            <p className='text-[#7D8184] font-secondary font-semibold text-[14px] leading-[21px] '>(88)</p>
-          </div>
-
-
-        </div> */}
-        <div className="slider-container">
+        <div className="slider-container 
+        ">
           <Slider {...settings}>
             <div>
               <div className="w-[270px] h-[350px] ">
@@ -265,7 +245,11 @@ const FlashSale = () => {
             </div>
 
           </Slider>
+          <div className="flex items-center justify-center pt-[51px] pb-[60px] border-b-1 border-gray-400  ">
+            <button className=' py-[16px] px-[48px] bg-red-500 text-whitefont-secondary font-medium  text-[16px] leading-[24px] rounded '>View All Products</button>
+          </div>
         </div>
+
 
       </Container>
     </div>
