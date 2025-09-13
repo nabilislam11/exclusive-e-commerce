@@ -56,12 +56,12 @@ const FlashSale = () => {
     ]
   };
   return (
-    <div className=' '>
+    <div className='border-b-1 border-gray-400  '>
       <Container>
         {/* todays__part */}
-        <div className="w-[100px] h-[40px] flex items-center group:  pb-[40px]">
-          <div className="w-[20px] h-full bg-red-500 rounded hover:w-full hover:bg-red-500 transition-all duration-300 ">
-            <p className='font-secondary font-semibold text-[16px] leading-[20px] text-red-500 hover:text-white pl-[26px] py-[10px] transition-all duration-300
+        <div className="w-[100px] h-[70px] flex items-center group pb-[40px]">
+          <div className="w-[18px] h-full bg-red-500 rounded group-hover:w-full group-hover:bg-red-500 transition-all duration-300 ">
+            <p className='font-secondary font-semibold text-[16px] leading-[20px] text-red-500 group-hover:text-white pl-[26px] py-[05px] transition-all duration-300
             '>Today's</p>
           </div>
         </div>
@@ -245,7 +245,7 @@ const FlashSale = () => {
             </div>
 
           </Slider>
-          <div className="flex items-center justify-center pt-[51px] pb-[60px] border-b-1 border-gray-400  ">
+          <div className="flex items-center justify-center pt-[51px] pb-[60px]  ">
             <button className=' py-[16px] px-[48px] bg-red-500 text-whitefont-secondary font-medium  text-[16px] leading-[24px] rounded '>View All Products</button>
           </div>
         </div>
