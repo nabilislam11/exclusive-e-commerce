@@ -5,8 +5,8 @@ import { FaStar } from 'react-icons/fa'
 import bestsell from '../../assets/bestsell.png'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-
-
+import { CiHeart } from 'react-icons/ci';
+import { LuEye } from 'react-icons/lu';
 
 
 const Thismonth = () => {
@@ -61,8 +61,16 @@ const Thismonth = () => {
         ">
                     <Slider {...settings}>
                         <div>
-                            <div className="w-[270px] h-[350px] ">
+                            <div className="w-[270px] h-[350px] relative">
                                 <img src={bestsell} alt="" />
+                                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                                    <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                                        <CiHeart />
+                                    </div>
+                                    <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                                        <LuEye />
+                                    </div>
+                                </div>
                                 <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>The north coat</h3>
                                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                                     <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
@@ -85,8 +93,16 @@ const Thismonth = () => {
                             </div>
                         </div>
                         <div>
-                            <div className="w-[270px] h-[350px] ">
+                            <div className="w-[270px] h-[350px] relative">
                                 <img src={product} alt="" />
+                                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                                    <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                                        <CiHeart />
+                                    </div>
+                                    <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                                        <LuEye />
+                                    </div>
+                                </div>
                                 <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
                                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                                     <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
@@ -109,8 +125,16 @@ const Thismonth = () => {
                             </div>
                         </div>
                         <div>
-                            <div className="w-[270px] h-[350px] ">
+                            <div className="w-[270px] h-[350px] relative">
                                 <img src={product} alt="" />
+                                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                                    <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                                        <CiHeart />
+                                    </div>
+                                    <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                                        <LuEye />
+                                    </div>
+                                </div>
                                 <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
                                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                                     <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
@@ -133,8 +157,16 @@ const Thismonth = () => {
                             </div>
                         </div>
                         <div>
-                            <div className="w-[270px] h-[350px] ">
+                            <div className="w-[270px] h-[350px] relative ">
                                 <img src={product} alt="" />
+                                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                                    <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                                        <CiHeart />
+                                    </div>
+                                    <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                                        <LuEye />
+                                    </div>
+                                </div>
                                 <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
                                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                                     <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
@@ -157,8 +189,16 @@ const Thismonth = () => {
                             </div>
                         </div>
                         <div>
-                            <div className="w-[270px] h-[350px] ">
+                            <div className="w-[270px] h-[350px] relative ">
                                 <img src={product} alt="" />
+                                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                                    <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                                        <CiHeart />
+                                    </div>
+                                    <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                                        <LuEye />
+                                    </div>
+                                </div>
                                 <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
                                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                                     <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
@@ -181,8 +221,16 @@ const Thismonth = () => {
                             </div>
                         </div>
                         <div>
-                            <div className="w-[270px] h-[350px] ">
+                            <div className="w-[270px] h-[350px] relative ">
                                 <img src={product} alt="" />
+                                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                                    <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                                        <CiHeart />
+                                    </div>
+                                    <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                                        <LuEye />
+                                    </div>
+                                </div>
                                 <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
                                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                                     <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>

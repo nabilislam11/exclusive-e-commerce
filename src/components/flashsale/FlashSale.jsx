@@ -6,6 +6,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import { CiHeart } from 'react-icons/ci';
+import { LuEye } from 'react-icons/lu';
 
 const NextArrow = ({ onClick }) => {
   return (
@@ -94,8 +96,12 @@ const FlashSale = () => {
               <p className='font-primary font-bold text-[32px] leading-[30px] '>50</p>
 
             </div>
-
           </div>
+
+
+
+
+
         </div>
         {/* product_card */}
 
@@ -103,8 +109,17 @@ const FlashSale = () => {
         ">
           <Slider {...settings}>
             <div>
-              <div className="w-[270px] h-[350px] ">
+              <div className="w-[270px] h-[350px] relative ">
                 <img src={product} alt="" />
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                  <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                    <CiHeart />
+                  </div>
+                  <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                    <LuEye />
+                  </div>
+                </div>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>-40%</p>
                 <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                   <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
@@ -127,8 +142,17 @@ const FlashSale = () => {
               </div>
             </div>
             <div>
-              <div className="w-[270px] h-[350px] ">
+              <div className="w-[270px] h-[350px ] relative ">
                 <img src={product} alt="" />
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                  <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                    <CiHeart />
+                  </div>
+                  <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                    <LuEye />
+                  </div>
+                </div>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>-40%</p>
                 <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                   <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
@@ -151,8 +175,17 @@ const FlashSale = () => {
               </div>
             </div>
             <div>
-              <div className="w-[270px] h-[350px] ">
+              <div className="w-[270px] h-[350px] relative">
                 <img src={product} alt="" />
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                  <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                    <CiHeart />
+                  </div>
+                  <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                    <LuEye />
+                  </div>
+                </div>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>-40%</p>
                 <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                   <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
@@ -175,8 +208,17 @@ const FlashSale = () => {
               </div>
             </div>
             <div>
-              <div className="w-[270px] h-[350px] ">
+              <div className="w-[270px] h-[350px] relative">
                 <img src={product} alt="" />
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                  <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                    <CiHeart />
+                  </div>
+                  <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                    <LuEye />
+                  </div>
+                </div>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>-40%</p>
                 <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                   <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
@@ -199,8 +241,17 @@ const FlashSale = () => {
               </div>
             </div>
             <div>
-              <div className="w-[270px] h-[350px] ">
+              <div className="w-[270px] h-[350px]  relative">
                 <img src={product} alt="" />
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                  <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                    <CiHeart />
+                  </div>
+                  <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                    <LuEye />
+                  </div>
+                </div>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>-40%</p>
                 <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                   <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
@@ -223,8 +274,17 @@ const FlashSale = () => {
               </div>
             </div>
             <div>
-              <div className="w-[270px] h-[350px] ">
+              <div className="w-[270px] h-[350px] relative ">
                 <img src={product} alt="" />
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                  <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                    <CiHeart />
+                  </div>
+                  <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                    <LuEye />
+                  </div>
+                </div>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>-40%</p>
                 <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                   <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
@@ -249,7 +309,7 @@ const FlashSale = () => {
 
           </Slider>
           <div className="flex items-center justify-center pt-[51px] pb-[60px]  ">
-            <button className=' py-[16px] px-[48px] bg-red-500 text-whitefont-secondary font-medium  text-[16px] leading-[24px] rounded '>View All Products</button>
+            <button className=' py-[16px] px-[48px] bg-red-500 text-white font-secondary font-medium  text-[16px] leading-[24px] rounded '>View All Products</button>
           </div>
         </div>
 
