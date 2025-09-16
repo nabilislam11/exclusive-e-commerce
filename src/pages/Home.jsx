@@ -4,6 +4,7 @@ import FlashSale from '../components/flashsale/flashSale'
 import Categoris from '../components/categories/Categoris'
 import Thismonth from '../components/thismonth/Thismonth'
 import Advertisement from '../components/advertisement/Advertisement'
+import LocalProduct from '../components/localproduct/LocalProduct'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Categoris></Categoris>
       <Thismonth></Thismonth>
       <Advertisement></Advertisement>
+      <LocalProduct></LocalProduct>
     </div>
   )
 }

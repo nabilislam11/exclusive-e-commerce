@@ -35,7 +35,7 @@ const Thismonth = () => {
         ]
     };
     return (
-        <div className='border-b-1 border-gray-400 pt-[70px] pb-[140px] '>
+        <div className=' pt-[70px] pb-[140px] '>
             <Container>
                 {/* This__Month */}
                 <div class="relative inline-block group h-[30px]  overflow-hidden rounded-md">
