@@ -108,14 +108,16 @@ const FlashSale = () => {
         <div className="slider-container 
         ">
           <Slider {...settings}>
+
             <div>
 
               <div className="w-[270px] h-[350px] relative group  overflow-hidden ">
-                <img src={product} alt="" />
-
-                <button className=" absolute inset-0   translate-y-full  bg-black group-hover:translate-y-50  transition-transform duration-500 flex items-center justify-center  text-white py-[80px]">
-                  Add To Cart
-                </button>
+                <div className="relative group overflow-hidden">
+                  <img src={product} alt="" />
+                  <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                    Add To Cart
+                  </button>
+                </div>
                 <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
                   <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
                     <CiHeart size={20} />
@@ -145,7 +147,302 @@ const FlashSale = () => {
 
               </div>
             </div>
+            <div>
+              <div className="w-[270px] h-[350px] relative group  overflow-hidden ">
+                <div className="relative group overflow-hidden">
+                  <img src={product} alt="" />
+                  <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                    Add To Cart
+                  </button>
+                </div>
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                  <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                    <CiHeart size={20} />
+                  </div>
+                  <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                    <LuEye />
+                  </div>
+                </div>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>-40%</p>
+                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
+                <div className="flex items-center gap-x-[12px] pb-[8px] ">
+                  <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
+                  <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
+                </div>
+                <div className="flex items-center gap-x-[8px]">
+                  <div className="flex items-center">
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
 
+
+                  </div>
+                  <p className='text-[#7D8184] font-secondary font-semibold text-[14px] leading-[21px] '>(88)</p>
+                </div>
+
+              </div>
+            </div>
+            <div>
+              <div className="w-[270px] h-[350px] relative group  overflow-hidden ">
+                <div className="relative group overflow-hidden">
+                  <img src={product} alt="" />
+                  <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                    Add To Cart
+                  </button>
+                </div>
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                  <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                    <CiHeart size={20} />
+                  </div>
+                  <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                    <LuEye />
+                  </div>
+                </div>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>-40%</p>
+                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
+                <div className="flex items-center gap-x-[12px] pb-[8px] ">
+                  <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
+                  <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
+                </div>
+                <div className="flex items-center gap-x-[8px]">
+                  <div className="flex items-center">
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+
+
+                  </div>
+                  <p className='text-[#7D8184] font-secondary font-semibold text-[14px] leading-[21px] '>(88)</p>
+                </div>
+
+              </div>
+            </div>
+            <div>
+              <div className="w-[270px] h-[350px] relative group  overflow-hidden ">
+                <div className="relative group overflow-hidden">
+                  <img src={product} alt="" />
+                  <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                    Add To Cart
+                  </button>
+                </div>
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                  <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                    <CiHeart size={20} />
+                  </div>
+                  <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                    <LuEye />
+                  </div>
+                </div>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>-40%</p>
+                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
+                <div className="flex items-center gap-x-[12px] pb-[8px] ">
+                  <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
+                  <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
+                </div>
+                <div className="flex items-center gap-x-[8px]">
+                  <div className="flex items-center">
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+
+
+                  </div>
+                  <p className='text-[#7D8184] font-secondary font-semibold text-[14px] leading-[21px] '>(88)</p>
+                </div>
+
+              </div>
+            </div>
+            <div>
+              <div className="w-[270px] h-[350px] relative group  overflow-hidden ">
+                <div className="relative group overflow-hidden">
+                  <img src={product} alt="" />
+                  <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                    Add To Cart
+                  </button>
+                </div>
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                  <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                    <CiHeart size={20} />
+                  </div>
+                  <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                    <LuEye />
+                  </div>
+                </div>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>-40%</p>
+                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
+                <div className="flex items-center gap-x-[12px] pb-[8px] ">
+                  <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
+                  <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
+                </div>
+                <div className="flex items-center gap-x-[8px]">
+                  <div className="flex items-center">
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+
+
+                  </div>
+                  <p className='text-[#7D8184] font-secondary font-semibold text-[14px] leading-[21px] '>(88)</p>
+                </div>
+
+              </div>
+            </div>
+            <div>
+              <div className="w-[270px] h-[350px] relative group  overflow-hidden ">
+                <div className="relative group overflow-hidden">
+                  <img src={product} alt="" />
+                  <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                    Add To Cart
+                  </button>
+                </div>
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                  <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                    <CiHeart size={20} />
+                  </div>
+                  <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                    <LuEye />
+                  </div>
+                </div>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>-40%</p>
+                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
+                <div className="flex items-center gap-x-[12px] pb-[8px] ">
+                  <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
+                  <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
+                </div>
+                <div className="flex items-center gap-x-[8px]">
+                  <div className="flex items-center">
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+
+
+                  </div>
+                  <p className='text-[#7D8184] font-secondary font-semibold text-[14px] leading-[21px] '>(88)</p>
+                </div>
+
+              </div>
+            </div>
+            <div>
+              <div className="w-[270px] h-[350px] relative group  overflow-hidden ">
+                <div className="relative group overflow-hidden">
+                  <img src={product} alt="" />
+                  <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                    Add To Cart
+                  </button>
+                </div>
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                  <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                    <CiHeart size={20} />
+                  </div>
+                  <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                    <LuEye />
+                  </div>
+                </div>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>-40%</p>
+                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
+                <div className="flex items-center gap-x-[12px] pb-[8px] ">
+                  <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
+                  <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
+                </div>
+                <div className="flex items-center gap-x-[8px]">
+                  <div className="flex items-center">
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+
+
+                  </div>
+                  <p className='text-[#7D8184] font-secondary font-semibold text-[14px] leading-[21px] '>(88)</p>
+                </div>
+
+              </div>
+            </div>
+            <div>
+              <div className="w-[270px] h-[350px] relative group  overflow-hidden ">
+                <div className="relative group overflow-hidden">
+                  <img src={product} alt="" />
+                  <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                    Add To Cart
+                  </button>
+                </div>
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                  <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                    <CiHeart size={20} />
+                  </div>
+                  <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                    <LuEye />
+                  </div>
+                </div>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>-40%</p>
+                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
+                <div className="flex items-center gap-x-[12px] pb-[8px] ">
+                  <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
+                  <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
+                </div>
+                <div className="flex items-center gap-x-[8px]">
+                  <div className="flex items-center">
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+
+
+                  </div>
+                  <p className='text-[#7D8184] font-secondary font-semibold text-[14px] leading-[21px] '>(88)</p>
+                </div>
+
+              </div>
+            </div>
+            <div>
+              <div className="w-[270px] h-[350px] relative group  overflow-hidden ">
+                <div className="relative group overflow-hidden">
+                  <img src={product} alt="" />
+                  <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                    Add To Cart
+                  </button>
+                </div>
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                  <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                    <CiHeart size={20} />
+                  </div>
+                  <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                    <LuEye />
+                  </div>
+                </div>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>-40%</p>
+                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
+                <div className="flex items-center gap-x-[12px] pb-[8px] ">
+                  <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
+                  <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
+                </div>
+                <div className="flex items-center gap-x-[8px]">
+                  <div className="flex items-center">
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+                    <FaStar className=' text-yellow-500 size-5  ' />
+
+
+                  </div>
+                  <p className='text-[#7D8184] font-secondary font-semibold text-[14px] leading-[21px] '>(88)</p>
+                </div>
+
+              </div>
+            </div>
 
           </Slider>
           <div className="flex items-center justify-center pt-[51px] pb-[60px]  ">
