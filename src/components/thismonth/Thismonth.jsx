@@ -62,7 +62,12 @@ const Thismonth = () => {
                     <Slider {...settings}>
                         <div>
                             <div className="w-[270px] h-[350px] relative">
-                                <img src={bestsell} alt="" />
+                                <div className="relative group overflow-hidden">
+                                    <img src={product} alt="" />
+                                    <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                                        Add To Cart
+                                    </button>
+                                </div>
                                 <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
                                     <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
                                         <CiHeart />
@@ -92,9 +97,15 @@ const Thismonth = () => {
 
                             </div>
                         </div>
+
                         <div>
                             <div className="w-[270px] h-[350px] relative">
-                                <img src={product} alt="" />
+                                <div className="relative group overflow-hidden">
+                                    <img src={product} alt="" />
+                                    <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                                        Add To Cart
+                                    </button>
+                                </div>
                                 <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
                                     <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
                                         <CiHeart />
@@ -103,7 +114,7 @@ const Thismonth = () => {
                                         <LuEye />
                                     </div>
                                 </div>
-                                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
+                                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>The north coat</h3>
                                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                                     <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
                                     <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
@@ -124,9 +135,15 @@ const Thismonth = () => {
 
                             </div>
                         </div>
+
                         <div>
                             <div className="w-[270px] h-[350px] relative">
-                                <img src={product} alt="" />
+                                <div className="relative group overflow-hidden">
+                                    <img src={product} alt="" />
+                                    <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                                        Add To Cart
+                                    </button>
+                                </div>
                                 <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
                                     <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
                                         <CiHeart />
@@ -135,7 +152,7 @@ const Thismonth = () => {
                                         <LuEye />
                                     </div>
                                 </div>
-                                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
+                                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>The north coat</h3>
                                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                                     <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
                                     <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
@@ -156,9 +173,15 @@ const Thismonth = () => {
 
                             </div>
                         </div>
+
                         <div>
-                            <div className="w-[270px] h-[350px] relative ">
-                                <img src={product} alt="" />
+                            <div className="w-[270px] h-[350px] relative">
+                                <div className="relative group overflow-hidden">
+                                    <img src={product} alt="" />
+                                    <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                                        Add To Cart
+                                    </button>
+                                </div>
                                 <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
                                     <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
                                         <CiHeart />
@@ -167,7 +190,7 @@ const Thismonth = () => {
                                         <LuEye />
                                     </div>
                                 </div>
-                                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
+                                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>The north coat</h3>
                                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                                     <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
                                     <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
@@ -188,9 +211,15 @@ const Thismonth = () => {
 
                             </div>
                         </div>
+
                         <div>
-                            <div className="w-[270px] h-[350px] relative ">
-                                <img src={product} alt="" />
+                            <div className="w-[270px] h-[350px] relative">
+                                <div className="relative group overflow-hidden">
+                                    <img src={product} alt="" />
+                                    <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                                        Add To Cart
+                                    </button>
+                                </div>
                                 <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
                                     <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
                                         <CiHeart />
@@ -199,7 +228,7 @@ const Thismonth = () => {
                                         <LuEye />
                                     </div>
                                 </div>
-                                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
+                                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>The north coat</h3>
                                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                                     <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
                                     <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
@@ -220,9 +249,15 @@ const Thismonth = () => {
 
                             </div>
                         </div>
+
                         <div>
-                            <div className="w-[270px] h-[350px] relative ">
-                                <img src={product} alt="" />
+                            <div className="w-[270px] h-[350px] relative">
+                                <div className="relative group overflow-hidden">
+                                    <img src={product} alt="" />
+                                    <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                                        Add To Cart
+                                    </button>
+                                </div>
                                 <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
                                     <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
                                         <CiHeart />
@@ -231,7 +266,7 @@ const Thismonth = () => {
                                         <LuEye />
                                     </div>
                                 </div>
-                                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>HAVIT HV-G92 Gamepad</h3>
+                                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>The north coat</h3>
                                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                                     <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
                                     <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
@@ -252,6 +287,83 @@ const Thismonth = () => {
 
                             </div>
                         </div>
+
+                        <div>
+                            <div className="w-[270px] h-[350px] relative">
+                                <div className="relative group overflow-hidden">
+                                    <img src={product} alt="" />
+                                    <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                                        Add To Cart
+                                    </button>
+                                </div>
+                                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                                    <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                                        <CiHeart />
+                                    </div>
+                                    <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                                        <LuEye />
+                                    </div>
+                                </div>
+                                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>The north coat</h3>
+                                <div className="flex items-center gap-x-[12px] pb-[8px] ">
+                                    <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
+                                    <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
+                                </div>
+                                <div className="flex items-center gap-x-[8px]">
+                                    <div className="flex items-center">
+                                        <FaStar className=' text-yellow-500 size-5  ' />
+                                        <FaStar className=' text-yellow-500 size-5  ' />
+                                        <FaStar className=' text-yellow-500 size-5  ' />
+                                        <FaStar className=' text-yellow-500 size-5  ' />
+                                        <FaStar className=' text-yellow-500 size-5  ' />
+
+
+                                    </div>
+                                    <p className='text-[#7D8184] font-secondary font-semibold text-[14px] leading-[21px] '>(88)</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className="w-[270px] h-[350px] relative">
+                                <div className="relative group overflow-hidden">
+                                    <img src={product} alt="" />
+                                    <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
+                                        Add To Cart
+                                    </button>
+                                </div>
+                                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
+                                    <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                                        <CiHeart />
+                                    </div>
+                                    <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                                        <LuEye />
+                                    </div>
+                                </div>
+                                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>The north coat</h3>
+                                <div className="flex items-center gap-x-[12px] pb-[8px] ">
+                                    <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>$120</p>
+                                    <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>$160</p>
+                                </div>
+                                <div className="flex items-center gap-x-[8px]">
+                                    <div className="flex items-center">
+                                        <FaStar className=' text-yellow-500 size-5  ' />
+                                        <FaStar className=' text-yellow-500 size-5  ' />
+                                        <FaStar className=' text-yellow-500 size-5  ' />
+                                        <FaStar className=' text-yellow-500 size-5  ' />
+                                        <FaStar className=' text-yellow-500 size-5  ' />
+
+
+                                    </div>
+                                    <p className='text-[#7D8184] font-secondary font-semibold text-[14px] leading-[21px] '>(88)</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+
 
                     </Slider>
 
