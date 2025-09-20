@@ -5,6 +5,7 @@ import Categoris from '../components/categories/Categoris'
 import Thismonth from '../components/thismonth/Thismonth'
 import Advertisement from '../components/advertisement/Advertisement'
 import LocalProduct from '../components/localproduct/LocalProduct'
+import Featured from '../components/featured/Featured'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Thismonth></Thismonth>
       <Advertisement></Advertisement>
       <LocalProduct></LocalProduct>
+      <Featured></Featured>
     </div>
   )
 }

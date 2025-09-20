@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../container/Container'
-import productimg from '../../assets/product.png'
+import todays1 from '../../assets/todays1.png'
 import { FaRegStar, FaStar, FaStarHalfAlt } from 'react-icons/fa'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -8,6 +8,9 @@ import "slick-carousel/slick/slick-theme.css";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { CiHeart } from 'react-icons/ci';
 import { LuEye } from 'react-icons/lu';
+import todays2 from '../../assets/todays2.png'
+import todays3 from '../../assets/todays3.png'
+import todays4 from '../../assets/todays4.png'
 
 
 const RatingStars = ({ rating }) => {
@@ -34,10 +37,10 @@ const RatingStars = ({ rating }) => {
 };
 
 
-const product = [
+const ProductCard = [
   {
     id: 1,
-    img: productimg,
+    img: todays1,
     tittle: "HAVIT HV- G92 Gamepad",
     oldPrice: ` $190`,
     newPrice: `$120`,
@@ -46,8 +49,8 @@ const product = [
     rating: 88,
   },
   {
-    id: 1,
-    img: productimg,
+    id: 2,
+    img: todays2,
     tittle: "AK-900 Wired Keyboard",
     oldPrice: `$960`,
     newPrice: `$1160`,
@@ -56,8 +59,8 @@ const product = [
     rating: 75,
   },
   {
-    id: 1,
-    img: productimg,
+    id: 3,
+    img: todays3,
     tittle: "IPS LCD Gaming Monitor",
     oldPrice: `$370`,
     newPrice: `$400`,
@@ -66,8 +69,8 @@ const product = [
     rating: 99,
   },
   {
-    id: 1,
-    img: productimg,
+    id: 4,
+    img: todays4,
     tittle: "S-Series Comfort Chair ",
     oldPrice: `$375`,
     newPrice: `$400`,
@@ -76,8 +79,8 @@ const product = [
     rating: 98,
   },
   {
-    id: 1,
-    img: productimg,
+    id: 5,
+    img: todays3,
     tittle: "HAVIT HV- G92 Gamepad",
     oldPrice: 190,
     newPrice: 120,
@@ -86,8 +89,8 @@ const product = [
     rating: 88,
   },
   {
-    id: 1,
-    img: productimg,
+    id: 6,
+    img: todays3,
     tittle: "HAVIT HV- G92 Gamepad",
     oldPrice: 190,
     newPrice: 120,
@@ -197,10 +200,10 @@ const FlashSale = () => {
         ">
           <Slider {...settings}>
             {
-              product.map((items) => (
+              ProductCard.map((items) => (
                 <div key={items.id} className=" px-2 ">
                   <div className="w-[270px] h-[355px] relative group  overflow-hidden  ">
-                    <div className="relative group overflow-hidden ">
+                    <div className="relative group overflow-hidden bg-[#f5f5f5] ">
                       <img className='w-full ' src={items.img} alt="" />
                       <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
                         Add To Cart
