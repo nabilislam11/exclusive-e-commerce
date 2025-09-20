@@ -11,6 +11,7 @@ import { LuEye } from 'react-icons/lu';
 import todays2 from '../../assets/todays2.png'
 import todays3 from '../../assets/todays3.png'
 import todays4 from '../../assets/todays4.png'
+import ProductCard from '../local/ProductCard';
 
 
 const RatingStars = ({ rating }) => {
@@ -37,7 +38,7 @@ const RatingStars = ({ rating }) => {
 };
 
 
-const ProductCard = [
+const flashSale = [
   {
     id: 1,
     img: todays1,
@@ -89,7 +90,7 @@ const ProductCard = [
     rating: 88,
   },
   {
-    id: 6,
+    id: 1,
     img: todays3,
     tittle: "HAVIT HV- G92 Gamepad",
     oldPrice: 190,
@@ -200,36 +201,8 @@ const FlashSale = () => {
         ">
           <Slider {...settings}>
             {
-              ProductCard.map((items) => (
-                <div key={items.id} className=" px-2 ">
-                  <div className="w-[270px] h-[355px] relative group  overflow-hidden  ">
-                    <div className="relative group overflow-hidden bg-[#f5f5f5] ">
-                      <img className='w-full ' src={items.img} alt="" />
-                      <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
-                        Add To Cart
-                      </button>
-                      <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
-                        <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
-                          <CiHeart size={20} />
-                        </div>
-                        <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
-                          <LuEye />
-                        </div>
-                      </div>
-                    </div>
-                    <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>{items.discount}</p>
-                    <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>{items.tittle}</h3>
-                    <div className="flex items-center gap-x-[12px] pb-[8px] ">
-                      <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>{items.newPrice}</p>
-                      <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>{items.oldPrice}</p>
-                    </div>
-                    <div className="flex items-center mt-1">
-                      <RatingStars rating={items.ratingStar} />
-                      <span className="ml-2 text-gray-600">({items.rating})</span>
-                    </div>
-                  </div>
-                </div>
-
+              flashSale.map((items) => (
+                <ProductCard items={items}></ProductCard>
               ))
             }
 

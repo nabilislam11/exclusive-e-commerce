@@ -9,6 +9,7 @@ import thisMonth1 from '../../assets/thisMonth1.png'
 import thisMonth2 from '../../assets/thisMonth2.png'
 import thisMonth3 from '../../assets/thisMonth3.png'
 import thisMonth4 from '../../assets/thisMonth4.png'
+import ProductCard from '../local/ProductCard';
 
 
 const Thismonth = () => {
@@ -35,7 +36,7 @@ const Thismonth = () => {
             </div>
         );
     };
-    const ProductCard = [
+    const thismonth = [
         {
             id: 1,
             img: thisMonth1,
@@ -135,7 +136,7 @@ const Thismonth = () => {
                     </span>
                 </div>
                 {/* Best_Selling_Products*/}
-                <div className=" flex justify-between items-center pt-[24px] pb-[40px] ">
+                <div className=" flex justify-between items-center pt-[24px]">
                     <h1 className='font-primary font-semibold text-[36px] leading-[48px]'>Best Selling Products</h1>
                     <div className="flex items-center justify-center pt-[51px] pb-[60px]  ">
                         <button className='text-white  py-[16px] px-[48px] bg-red-500 text-whitefont-secondary font-medium  text-[16px] leading-[24px] rounded '>View All</button>
@@ -148,35 +149,8 @@ const Thismonth = () => {
         ">
                     <Slider {...settings}>
                         {
-                            ProductCard.map((items) => (
-                                <div key={items.id} className=" px-2 ">
-                                    <div className="w-[270px] h-[355px] relative group  overflow-hidden  ">
-                                        <div className="relative group overflow-hidden bg-[#f5f5f5] ">
-                                            <img className='w-full py-[30px] px-[40px] ' src={items.img} alt="" />
-                                            <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
-                                                Add To Cart
-                                            </button>
-                                            <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
-                                                <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
-                                                    <CiHeart size={20} />
-                                                </div>
-                                                <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
-                                                    <LuEye />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>{items.discount}</p>
-                                        <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>{items.tittle}</h3>
-                                        <div className="flex items-center gap-x-[12px] pb-[8px] ">
-                                            <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>{items.newPrice}</p>
-                                            <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>{items.oldPrice}</p>
-                                        </div>
-                                        <div className="flex items-center mt-1">
-                                            <RatingStars rating={items.ratingStar} />
-                                            <span className="ml-2 text-gray-600">({items.rating})</span>
-                                        </div>
-                                    </div>
-                                </div>
+                            thismonth.map((items) => (
+                                <ProductCard items={items}> </ProductCard>
 
                             ))
                         }
