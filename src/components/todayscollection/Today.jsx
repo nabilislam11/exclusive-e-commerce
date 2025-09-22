@@ -6,8 +6,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
-import { CiHeart } from 'react-icons/ci';
-import { LuEye } from 'react-icons/lu';
 import todays2 from '../../assets/todays2.png'
 import todays3 from '../../assets/todays3.png'
 import todays4 from '../../assets/todays4.png'
@@ -123,7 +121,7 @@ const PrevArrow = ({ onClick }) => {
     );
 };
 
-const Flashsale = () => {
+const Today = () => {
     var settings = {
         dots: false,
         infinite: true,
@@ -218,4 +216,4 @@ const Flashsale = () => {
 }
 
 
-export default Flashsale
+export default Today
