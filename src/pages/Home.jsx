@@ -7,6 +7,7 @@ import Advertisement from '../components/advertisement/Advertisement'
 import LocalProduct from '../components/localproduct/LocalProduct'
 import Featured from '../components/featured/Featured'
 import Today from '../components/todayscollection/Today'
+import Service from '../components/service/Service'
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <Advertisement></Advertisement>
       <LocalProduct></LocalProduct>
       <Featured></Featured>
+      <Service></Service>
     </div>
   )
 }
