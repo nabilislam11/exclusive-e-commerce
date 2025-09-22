@@ -9,18 +9,18 @@ const Featured = () => {
     return (
         <div className='py-[140px] '>
             <Container>
-                <div class="relative inline-block group h-[30px]  overflow-hidden rounded-md">
+                {/* top__part */}
+                <div className="">
+                    <div class="relative inline-block group h-[30px]  overflow-hidden rounded-md">
 
-                    <div class="absolute top-0 left-0 h-full w-3 bg-red-500 transition-all duration-500 group-hover:w-full"></div>
-
-
-                    <span class="relative z-10 px-4 py-2 font-semibold text-red-500 items-center transition-colors duration-500 group-hover:text-white">
-                        Featured
-                    </span>
-                </div>
-                <div className="flex gap-[87px] items-center pt-[24px]  ">
-                    <h1 className='font-primary font-semibold text-[36px] leading-[48px]'>New Arrival</h1>
-
+                        <div class="absolute top-0 left-0 h-full w-3 bg-red-500 transition-all duration-500 group-hover:w-full"></div>
+                        <span class="relative z-10 px-4 py-2 font-semibold text-red-500 items-center transition-colors duration-500 group-hover:text-white">
+                            Featured
+                        </span>
+                    </div>
+                    <div className="flex gap-[87px] items-center pt-[24px]  ">
+                        <h1 className='font-primary font-semibold text-[36px] leading-[48px]'>New Arrival</h1>
+                    </div>
                 </div>
                 <div className="flex  gap-x-[30px] justify-center  pt-[60px]">
                     <div className=" relative">
@@ -39,7 +39,6 @@ const Featured = () => {
                                 <h1 className=' font-primary font-semibold text-[24px] leading-[24px] text-white'>PlayStation 5</h1>
                                 <p className='font-secondary  font-normal text-[14px] leading-[21px] text-white' >Black and White version of the PS5 coming out on sale.</p>
                                 <a className='font-secondary  font-medium  text-[16px] leading-[21px] text-white' href="">Shop Now</a>
-
                             </div>
                         </div>
                         <div className="flex justify-between">
@@ -58,13 +57,10 @@ const Featured = () => {
                                     <h1 className=' font-primary font-semibold text-[24px] leading-[24px] text-white'>PlayStation 5</h1>
                                     <p className='font-secondary  font-normal text-[14px] leading-[21px] text-white' >Black and White version of the PS5 coming out on sale.</p>
                                     <a className='font-secondary  font-medium  text-[16px] leading-[21px] text-white' href="">Shop Now</a>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
             </Container>
         </div>
