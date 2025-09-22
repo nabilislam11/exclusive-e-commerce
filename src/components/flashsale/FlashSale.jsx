@@ -123,7 +123,7 @@ const PrevArrow = ({ onClick }) => {
     );
 };
 
-const FlashSale = () => {
+const Flashsale = () => {
     var settings = {
         dots: false,
         infinite: true,
@@ -218,4 +218,4 @@ const FlashSale = () => {
 }
 
 
-export default FlashSale
+export default Flashsale
