@@ -38,7 +38,7 @@ const RatingStars = ({ rating }) => {
 };
 
 
-const flashSale = [
+const today = [
   {
     id: 1,
     img: todays1,
@@ -201,7 +201,7 @@ const FlashSale = () => {
         ">
           <Slider {...settings}>
             {
-              flashSale.map((items) => (
+              today.map((items) => (
                 <ProductCard items={items}></ProductCard>
               ))
             }
