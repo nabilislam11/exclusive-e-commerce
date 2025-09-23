@@ -127,10 +127,7 @@ const Thismonth = () => {
             <Container>
                 {/* This__Month */}
                 <div class="relative inline-block group h-[30px]  overflow-hidden rounded-md">
-
                     <div class="absolute top-0 left-0 h-full w-3 bg-red-500 transition-all duration-500 group-hover:w-full"></div>
-
-
                     <span class="relative z-10 px-4 py-2 font-semibold text-red-500 transition-colors duration-500 group-hover:text-white">
                         This Month
                     </span>
@@ -141,12 +138,10 @@ const Thismonth = () => {
                     <div className="flex items-center justify-center pt-[51px] pb-[60px]  ">
                         <button className='text-white  py-[16px] px-[48px] bg-red-500 text-whitefont-secondary font-medium  text-[16px] leading-[24px] rounded '>View All</button>
                     </div>
-
                 </div>
                 {/* product_card */}
 
-                <div className="slider-container 
-        ">
+                <div className="slider-container">
                     <Slider {...settings}>
                         {
                             thismonth.map((items) => (
@@ -154,15 +149,8 @@ const Thismonth = () => {
 
                             ))
                         }
-
-
-
-
                     </Slider>
-
                 </div>
-
-
             </Container>
         </div>
     )
