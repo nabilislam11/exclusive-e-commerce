@@ -10,6 +10,7 @@ import todays2 from '../../assets/todays2.png'
 import todays3 from '../../assets/todays3.png'
 import todays4 from '../../assets/todays4.png'
 import ProductCard from '../local/ProductCard';
+import { Link } from 'react-router';
 
 
 const RatingStars = ({ rating }) => {
@@ -36,7 +37,7 @@ const RatingStars = ({ rating }) => {
 };
 
 
-const today = [
+const flashSell = [
     {
         id: 1,
         img: todays1,
@@ -97,6 +98,16 @@ const today = [
         ratingStar: 4.5,
         rating: 88,
     },
+    {
+        id: 4,
+        img: todays4,
+        tittle: "S-Series Comfort Chair ",
+        oldPrice: `$375`,
+        newPrice: `$400`,
+        discount: "-40%",
+        ratingStar: 4,
+        rating: 98,
+    }
 ]
 
 const NextArrow = ({ onClick }) => {
@@ -195,7 +206,7 @@ const Today = () => {
         ">
                     <Slider {...settings}>
                         {
-                            today.map((items) => (
+                            flashSell.map((items) => (
                                 <ProductCard items={items}></ProductCard>
                             ))
                         }
@@ -205,7 +216,7 @@ const Today = () => {
 
                     </Slider>
                     <div className="flex items-center justify-center pt-[51px] pb-[60px]  ">
-                        <button className=' py-[16px] px-[48px] bg-red-500 text-white font-secondary font-medium  text-[16px] leading-[24px] rounded '>View All Products</button>
+                        <Link to={"/allproduct"} className=' py-[16px] px-[48px] bg-red-500 text-white font-secondary font-medium  text-[16px] leading-[24px] rounded '>View All Products</Link>
                     </div>
                 </div>
 
