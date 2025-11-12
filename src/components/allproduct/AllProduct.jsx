@@ -1,105 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from '../container/Container'
 import { Link } from 'react-router'
 import ProductCard from '../local/ProductCard'
-import todays1 from '../../assets/todays1.png'
-import todays2 from '../../assets/todays2.png'
-import todays3 from '../../assets/todays3.png'
-import todays4 from '../../assets/todays4.png'
+import axios from 'axios';
+
 
 const AllProduct = () => {
-    const flashSell = [
-        {
-            id: 1,
-            img: todays1,
-            tittle: "HAVIT HV- G92 Gamepad",
-            oldPrice: ` $190`,
-            newPrice: `$120`,
-            discount: "-40%",
-            ratingStar: 2.5,
-            rating: 88,
-        },
-        {
-            id: 2,
-            img: todays2,
-            tittle: "AK-900 Wired Keyboard",
-            oldPrice: `$960`,
-            newPrice: `$1160`,
-            discount: "-40%",
-            ratingStar: 5,
-            rating: 75,
-        },
-        {
-            id: 3,
-            img: todays3,
-            tittle: "IPS LCD Gaming Monitor",
-            oldPrice: `$370`,
-            newPrice: `$400`,
-            discount: "-40%",
-            ratingStar: 3,
-            rating: 99,
-        },
-        {
-            id: 4,
-            img: todays4,
-            tittle: "S-Series Comfort Chair ",
-            oldPrice: `$375`,
-            newPrice: `$400`,
-            discount: "-40%",
-            ratingStar: 4,
-            rating: 98,
-        },
-        {
-            id: 5,
-            img: todays3,
-            tittle: "HAVIT HV- G92 Gamepad",
-            oldPrice: 190,
-            newPrice: 120,
-            discount: "-40%",
-            ratingStar: 5,
-            rating: 88,
-        },
-        {
-            id: 5,
-            img: todays3,
-            tittle: "HAVIT HV- G92 Gamepad",
-            oldPrice: 190,
-            newPrice: 120,
-            discount: "-40%",
-            ratingStar: 5,
-            rating: 88,
-        },
-        {
-            id: 5,
-            img: todays3,
-            tittle: "HAVIT HV- G92 Gamepad",
-            oldPrice: 190,
-            newPrice: 120,
-            discount: "-40%",
-            ratingStar: 5,
-            rating: 88,
-        },
-        {
-            id: 1,
-            img: todays3,
-            tittle: "HAVIT HV- G92 Gamepad",
-            oldPrice: 190,
-            newPrice: 120,
-            discount: "-40%",
-            ratingStar: 4.5,
-            rating: 88,
-        },
-        {
-            id: 4,
-            img: todays4,
-            tittle: "S-Series Comfort Chair ",
-            oldPrice: `$375`,
-            newPrice: `$400`,
-            discount: "-40%",
-            ratingStar: 4,
-            rating: 98,
+    const [product, setProduct] = useState([]);
+    const fetchProduct = async () => {
+        try {
+            const data = await axios.get("http://localhost:3000/api/v1/product/get-allproduct")
+            console.log("Backend data:", data.data);
+            setProduct(data.data.data);
+
+
+        } catch (error) {
+            console.log(error);
+
+
         }
-    ]
+    }
+    useEffect(() => {
+        fetchProduct()
+
+    }, [])
+
     const productCategory = [
         { name: "Woman's Fashion" },
         { name: "Men's Fashion" },
@@ -163,8 +88,8 @@ const AllProduct = () => {
                         <div className="w-4/5">
                             <div className="flex flex-wrap justify-between  ">
                                 {
-                                    flashSell.map((items) => (
-                                        <ProductCard items={items}></ProductCard>
+                                    product.map((items) => (
+                                        <ProductCard key={items._id} items={items}></ProductCard>
                                     ))
                                 }
                             </div>
