@@ -34,7 +34,7 @@ const ProductCard = ({ items }) => {
         <div className=" px-2 pt-[60px] ">
             <div className="w-[270px] h-[355px] relative group  overflow-hidden  ">
                 <div className="relative group overflow-hidden bg-[#f5f5f5] ">
-                    <img className='w-full py-[30px] px-[40px] ' src={items.img} alt="" />
+                    <img className='w-full py-[30px] px-[40px] ' src={items.image} alt="" />
                     <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
                         Add To Cart
                     </button>
@@ -48,10 +48,10 @@ const ProductCard = ({ items }) => {
                     </div>
                 </div>
                 <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>{items.discount}</p>
-                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>{items.tittle}</h3>
+                <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>{items.name}</h3>
                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                     <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>{items.newPrice}</p>
-                    <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>{items.oldPrice}</p>
+                    <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>{items.price}</p>
                 </div>
                 <div className="flex items-center mt-1">
                     <RatingStars rating={items.ratingStar} />

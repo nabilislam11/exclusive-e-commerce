@@ -23,8 +23,11 @@ const Navbar = () => {
                 <h1 className='font-primary  font-bold text-[24px] leading-[24px] '>Exclusive</h1>
               </div>
               <div className="py-[7px] flex items-center gap-x-12  ">
-                {navItems.map((nav) => (
-                  <Link className='font-secondary font-normal  text-[16px] leading-[24px]   text-black' to={nav.path}>{nav.name}</Link>
+                {navItems.map((nav, i) => (
+
+                  <Link key={i} className='font-secondary font-normal  text-[16px] leading-[24px]   text-black' to={nav.path}>
+
+                    {nav.name}</Link>
                 ))}
 
                 {/* <ul className=' '>
