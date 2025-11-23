@@ -2,14 +2,33 @@ import React from 'react'
 import { CiHeart } from 'react-icons/ci';
 import { FaRegStar, FaStar, FaStarHalfAlt } from 'react-icons/fa'
 import { LuEye } from 'react-icons/lu';
+import { CiStar } from "react-icons/ci"
 
 
 
 
 const RatingStars = ({ rating }) => {
+    const fullRating = Math.floor(rating) || 0
+    const falfRating = (rating % 1 >= 0.5)
+    const emtyRating = 5 - fullRating - (falfRating ? 1 : 0)
     return (
         <div className="flex items-center">
-            {Array.from({ length: 5 }).map((_, i) => {
+            {
+                [...Array(fullRating)].map(() => (
+                    <FaStar className='text-amber-500' />
+                ))
+            }
+            {
+                falfRating && <FaStarHalfAlt className='text-amber-500' />
+            }
+            {
+                [...Array(emtyRating)].map(() => (
+                    <CiStar className='' />
+                ))
+            }
+            {/* ({rating}) */}
+
+            {/* {Array.from({ length: 5 }).map((_, i) => {
                 const full = i + 1 <= Math.floor(rating);   // full star
                 const half = i < rating && i + 1 > rating;  // half star
 
@@ -24,7 +43,7 @@ const RatingStars = ({ rating }) => {
                         )}
                     </span>
                 );
-            })}
+            })}{rating} */}
         </div>
     );
 };
@@ -47,16 +66,17 @@ const ProductCard = ({ items }) => {
                         </div>
                     </div>
                 </div>
-                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>{items.discount}</p>
+                <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>{items?.discount ? `${items.discount}%` : ""}</p>
                 <h3 className='pt-[16px] pb-[8px] font-secondary font-medium  text-[16px] leading-[24px]'>{items.name}</h3>
                 <div className="flex items-center gap-x-[12px] pb-[8px] ">
                     <p className='text-red-500  font-secondary font-medium  text-[16px] leading-[24px]'>{items.newPrice}</p>
                     <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px] '>{items.price}</p>
                 </div>
                 <div className="flex items-center mt-1">
-                    <RatingStars rating={items.ratingStar} />
+                    <RatingStars rating={items.rating} />
                     <span className="ml-2 text-gray-600">({items.rating})</span>
                 </div>
+
             </div>
         </div>
     )

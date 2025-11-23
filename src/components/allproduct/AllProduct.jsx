@@ -7,9 +7,14 @@ import axios from 'axios';
 
 const AllProduct = () => {
     const [product, setProduct] = useState([]);
+    const [totalData, setTotalData] = useState([0])
+    const [currentpage, setCurrentPage] = useState([1]) || 1
+    const [productPerPage, setProductPerPage] = useState([2])
     const fetchProduct = async () => {
         try {
-            const data = await axios.get("http://localhost:3000/api/v1/product/get-allproduct")
+            const data = await axios.get//("http://localhost:3000/api/v1/product/get-allproduct")
+                (`http://localhost:3000/api/v1/product/get-allproduct?page=${currentpage}&size=${productPerPage}`);
+            setTotalData(data.data.total);
             console.log("Backend data:", data.data);
             setProduct(data.data.data);
 
@@ -20,11 +25,12 @@ const AllProduct = () => {
 
         }
     }
+
     useEffect(() => {
         fetchProduct()
 
-    }, [])
-
+    }, [currentpage, productPerPage])
+    const pageArr = [...Array(Math.ceil(totalData / productPerPage)).keys()].map((item) => item + 1)
     const productCategory = [
         { name: "Woman's Fashion" },
         { name: "Men's Fashion" },
@@ -92,6 +98,13 @@ const AllProduct = () => {
                                         <ProductCard key={items._id} items={items}></ProductCard>
                                     ))
                                 }
+                            </div>
+                            <div className="flex gap-x-2 text-center justify-center">
+                                <button className='font-secondary py-[4px] px-2 bg-blue-500 text-white d-500 rounded' disabled={currentpage == 1} onClick={() => setCurrentPage(currentpage - 1)} >Prev</button>
+                                {pageArr.map((item) => (
+                                    <p onClick={() => setCurrentPage(item)} className={`py-[3px] px-2.5  rounded text-white  ${currentpage === item ? "bg-gray-700" : "bg-gray-500"}`}>{item}</p>
+                                ))}
+                                <button className=' font-secondary text-white py-[4px] px-2 bg-red-600 rounded' disabled={currentpage === pageArr.length} onClick={() => setCurrentPage(currentpage + 1)}>Next</button>
                             </div>
                         </div>
                     </div>
