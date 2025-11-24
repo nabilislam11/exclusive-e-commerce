@@ -40,73 +40,66 @@ const RatingStars = ({ rating }) => {
 const flashSell = [
     {
         id: 1,
-        img: todays1,
+        image: todays1,
         tittle: "HAVIT HV- G92 Gamepad",
         oldPrice: ` $190`,
         newPrice: `$120`,
         discount: "-40%",
-        ratingStar: 2.5,
-        rating: 88,
+
     },
     {
         id: 2,
-        img: todays2,
+        image: todays2,
         tittle: "AK-900 Wired Keyboard",
         oldPrice: `$960`,
         newPrice: `$1160`,
         discount: "-40%",
-        ratingStar: 5,
-        rating: 75,
+
     },
     {
         id: 3,
-        img: todays3,
+        image: todays3,
         tittle: "IPS LCD Gaming Monitor",
         oldPrice: `$370`,
         newPrice: `$400`,
         discount: "-40%",
-        ratingStar: 3,
-        rating: 99,
+
     },
     {
         id: 4,
-        img: todays4,
+        image: todays4,
         tittle: "S-Series Comfort Chair ",
         oldPrice: `$375`,
         newPrice: `$400`,
         discount: "-40%",
-        ratingStar: 4,
-        rating: 98,
+
     },
     {
         id: 5,
-        img: todays3,
+        image: todays3,
         tittle: "HAVIT HV- G92 Gamepad",
         oldPrice: 190,
         newPrice: 120,
         discount: "-40%",
-        ratingStar: 5,
-        rating: 88,
+
     },
     {
         id: 1,
-        img: todays3,
+        image: todays3,
         tittle: "HAVIT HV- G92 Gamepad",
         oldPrice: 190,
         newPrice: 120,
         discount: "-40%",
-        ratingStar: 4.5,
-        rating: 88,
+
     },
     {
         id: 4,
-        img: todays4,
+        image: todays4,
         tittle: "S-Series Comfort Chair ",
         oldPrice: `$375`,
         newPrice: `$400`,
         discount: "-40%",
-        ratingStar: 4,
-        rating: 98,
+
     }
 ]
 

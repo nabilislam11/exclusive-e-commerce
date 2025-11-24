@@ -7,16 +7,19 @@ import axios from 'axios';
 
 const AllProduct = () => {
     const [product, setProduct] = useState([]);
-    const [totalData, setTotalData] = useState([0])
-    const [currentpage, setCurrentPage] = useState([1]) || 1
-    const [productPerPage, setProductPerPage] = useState([2])
+    const [totalData, setTotalData] = useState(0)
+    const [currentpage, setCurrentPage] = useState(1) || 1
+    const [productPerPage, setProductPerPage] = useState(2)
+    console.log("hello")
     const fetchProduct = async () => {
         try {
-            const data = await axios.get//("http://localhost:3000/api/v1/product/get-allproduct")
+            //("http://localhost:3000/api/v1/product/get-allproduct")
+            const data = await axios.get
                 (`http://localhost:3000/api/v1/product/get-allproduct?page=${currentpage}&size=${productPerPage}`);
             setTotalData(data.data.total);
-            console.log("Backend data:", data.data);
+            console.log("Backend data:", data);
             setProduct(data.data.data);
+
 
 
         } catch (error) {
@@ -25,12 +28,13 @@ const AllProduct = () => {
 
         }
     }
-
     useEffect(() => {
         fetchProduct()
 
     }, [currentpage, productPerPage])
+
     const pageArr = [...Array(Math.ceil(totalData / productPerPage)).keys()].map((item) => item + 1)
+
     const productCategory = [
         { name: "Woman's Fashion" },
         { name: "Men's Fashion" },

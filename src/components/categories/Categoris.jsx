@@ -1,10 +1,13 @@
 import React from 'react'
 import Container from '../container/Container'
-import { IoPhonePortraitOutline } from 'react-icons/io5'
+import { IoGameController, IoPhonePortraitOutline } from 'react-icons/io5'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import { MdArrowBackIos, MdArrowForwardIos, MdOutlineLaptopChromebook } from "react-icons/md";
+import { CiHeadphones } from 'react-icons/ci';
+import { FaTabletAlt } from 'react-icons/fa';
+import { BsPcDisplayHorizontal } from 'react-icons/bs';
 const NextArrow = ({ onClick }) => {
     return (
         <button
@@ -26,8 +29,47 @@ const PrevArrow = ({ onClick }) => {
         </button>
     );
 };
+const categories = [
+    {
+        id: 1,
+        name: "Phone",
+        icon: <IoPhonePortraitOutline className="size-14" />
+    },
+    {
+        id: 2,
+        name: "Headphone",
+        icon: <CiHeadphones className="size-14" />
+    },
+    {
+        id: 3,
+        name: "Tables",
+        icon: <FaTabletAlt className="size-14" />
+    },
+    {
+        id: 4,
+        name: "Pc",
+        icon: <BsPcDisplayHorizontal className="size-14" />
+    },
+    {
+        id: 5,
+        name: "Game",
+        icon: <IoGameController className="size-14" />
+    },
+    {
+        id: 6,
+        name: "Laptop",
+        icon: <MdOutlineLaptopChromebook className="size-14" />
+    },
+    {
+        id: 1,
+        name: "Phone",
+        icon: <IoPhonePortraitOutline className="size-14" />
+    },
+
+]
 
 const Categoris = () => {
+
     var settings = {
         dots: false,
         infinite: true,
@@ -76,54 +118,23 @@ const Categoris = () => {
 
                 <div className="slider-container pb-[40px] ">
                     <Slider {...settings}>
-                        <div>
-                            <div className="group w-[170px] h-[145px] bg-white flex flex-col items-center rounded justify-center gap-y-[16px] hover:bg-[#DB4444] transition-all duration-300 ">
-                                <IoPhonePortraitOutline className='text-black group-hover:text-white size-14 transition-all duration-300' />
-                                <p className='font-secondary font-normal text-[16px] leading-[24px] text-black group-hover:text-white transition-all duration-300'>Phones</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className="group w-[170px] h-[145px] bg-white flex flex-col items-center rounded justify-center gap-y-[16px] hover:bg-[#DB4444] transition-all duration-300 ">
-                                <IoPhonePortraitOutline className='text-black group-hover:text-white size-14 transition-all duration-300' />
-                                <p className='font-secondary font-normal text-[16px] leading-[24px] text-black group-hover:text-white transition-all duration-300'>Phones</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className="group w-[170px] h-[145px] bg-white flex flex-col items-center rounded justify-center gap-y-[16px] hover:bg-[#DB4444] transition-all duration-300 ">
-                                <IoPhonePortraitOutline className='text-black group-hover:text-white size-14 transition-all duration-300' />
-                                <p className='font-secondary font-normal text-[16px] leading-[24px] text-black group-hover:text-white transition-all duration-300'>Phones</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className="group w-[170px] h-[145px] bg-white flex flex-col items-center rounded justify-center gap-y-[16px] hover:bg-[#DB4444] transition-all duration-300 ">
-                                <IoPhonePortraitOutline className='text-black group-hover:text-white size-14 transition-all duration-300' />
-                                <p className='font-secondary font-normal text-[16px] leading-[24px] text-black group-hover:text-white transition-all duration-300'>Phones</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className="group w-[170px] h-[145px] bg-white flex flex-col items-center rounded justify-center gap-y-[16px] hover:bg-[#DB4444] transition-all duration-300 ">
-                                <IoPhonePortraitOutline className='text-black group-hover:text-white size-14 transition-all duration-300' />
-                                <p className='font-secondary font-normal text-[16px] leading-[24px] text-black group-hover:text-white transition-all duration-300'>Phones</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className="group w-[170px] h-[145px] bg-white flex flex-col items-center rounded justify-center gap-y-[16px] hover:bg-[#DB4444] transition-all duration-300 ">
-                                <IoPhonePortraitOutline className='text-black group-hover:text-white size-14 transition-all duration-300' />
-                                <p className='font-secondary font-normal text-[16px] leading-[24px] text-black group-hover:text-white transition-all duration-300'>Phones</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className="group w-[170px] h-[145px] bg-white flex flex-col items-center rounded justify-center gap-y-[16px] hover:bg-[#DB4444] transition-all duration-300 ">
-                                <IoPhonePortraitOutline className='text-black group-hover:text-white size-14 transition-all duration-300' />
-                                <p className='font-secondary font-normal text-[16px] leading-[24px] text-black group-hover:text-white transition-all duration-300'>Phones</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className="group w-[170px] h-[145px] bg-white flex flex-col items-center rounded justify-center gap-y-[16px] hover:bg-[#DB4444] transition-all duration-300 ">
-                                <IoPhonePortraitOutline className='text-black group-hover:text-white size-14 transition-all duration-300' />
-                                <p className='font-secondary font-normal text-[16px] leading-[24px] text-black group-hover:text-white transition-all duration-300'>Phones</p>
-                            </div>
-                        </div>
+
+                        {
+                            categories.map((cat) => (
+                                <div key={cat.id}>
+
+
+                                    <div className="group w-[170px] h-[145px] bg-white flex flex-col items-center rounded justify-center gap-y-[16px] hover:bg-[#DB4444] transition-all duration-300 border
+                                     border-gray-200  ">
+                                        <span className='text-black group-hover:text-white size-14 transition-all duration-300'>{cat.icon}</span>
+                                        <p className='font-secondary font-normal text-[16px] leading-[24px] text-black group-hover:text-white transition-all duration-300'>{cat.name}</p>
+                                    </div>
+
+                                </div>
+                            ))}
+
+
+
                     </Slider>
                 </div>
 

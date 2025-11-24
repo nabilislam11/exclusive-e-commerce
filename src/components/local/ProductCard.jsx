@@ -1,6 +1,6 @@
 import React from 'react'
 import { CiHeart } from 'react-icons/ci';
-import { FaRegStar, FaStar, FaStarHalfAlt } from 'react-icons/fa'
+import { FaStar, FaStarHalfAlt } from 'react-icons/fa'
 import { LuEye } from 'react-icons/lu';
 import { CiStar } from "react-icons/ci"
 
@@ -9,8 +9,13 @@ import { CiStar } from "react-icons/ci"
 
 const RatingStars = ({ rating }) => {
     const fullRating = Math.floor(rating) || 0
-    const falfRating = (rating % 1 >= 0.5)
-    const emtyRating = 5 - fullRating - (falfRating ? 1 : 0)
+    const halfRating = (rating % 1 >= 0.5)
+    const emptyRating = 5 - fullRating - (halfRating ? 1 : 0)
+    console.log(fullRating, halfRating, emptyRating);
+    console.log(rating);
+
+
+
     return (
         <div className="flex items-center">
             {
@@ -19,10 +24,10 @@ const RatingStars = ({ rating }) => {
                 ))
             }
             {
-                falfRating && <FaStarHalfAlt className='text-amber-500' />
+                halfRating && <FaStarHalfAlt className='text-amber-500' />
             }
             {
-                [...Array(emtyRating)].map(() => (
+                [...Array(emptyRating)].map(() => (
                     <CiStar className='' />
                 ))
             }
@@ -48,22 +53,24 @@ const RatingStars = ({ rating }) => {
     );
 };
 const ProductCard = ({ items }) => {
+    console.log(items);
+
     return (
 
-        <div className=" px-2 pt-[60px] ">
-            <div className="w-[270px] h-[355px] relative group  overflow-hidden  ">
-                <div className="relative group overflow-hidden bg-[#f5f5f5] ">
-                    <img className='w-full py-[30px] px-[40px] ' src={items.image} alt="" />
+        <div className=" w-[270px] px-2 pt-[60px] mx-auto  ">
+            <div className="w-full h-[355px] relative group  ">
+                <div className="relative group overflow-hidden bg-[#f5f5f5] group hover flex justify-center text-transparent  ">
+                    <img className='w-full h-[250px] py-[30px] px-[40px] object-cover transition-all duration-250 object-center group-hover:scale-120  ' src={items.image} alt="" />
                     <button className="absolute left-0 bottom-[-40px] bg-black/85 py-2 w-full text-white font-bold group-hover:bottom-0 transition-all duration-300">
                         Add To Cart
                     </button>
-                    <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px] ">
-                        <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
-                            <CiHeart size={20} />
-                        </div>
-                        <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
-                            <LuEye />
-                        </div>
+                </div>
+                <div className="flex flex-col gap-y-[8px] absolute top-[12px] right-[12px]">
+                    <div className="flex items-center justify-center p-[5px] bg-white  rounded-full ">
+                        <CiHeart size={20} />
+                    </div>
+                    <div className="flex items-center justify-center p-[5px] bg-white rounded-full  ">
+                        <LuEye />
                     </div>
                 </div>
                 <p className='absolute top-[12px] left-[12px]  py-[4px] px-[12px] bg-red-500 text-white rounded  '>{items?.discount ? `${items.discount}%` : ""}</p>
