@@ -1,8 +1,8 @@
 import React from 'react'
-import Container from '../container/Container'
+import Container from '../components/container/Container'
 import { CgArrowsScrollV } from 'react-icons/cg'
-import todays1 from '../../assets/todays1.png'
-import todays2 from '../../assets/todays2.png'
+import todays2 from '../assets/todays1.png'
+import todays1 from '../assets/todays2.png'
 
 const Cart = () => {
     return (

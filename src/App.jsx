@@ -8,8 +8,9 @@ import Signin from './pages/Signin';
 import Login from './pages/Login';
 import RootLayout from './pages/RootLayout';
 import Home from './pages/Home';
-import AllProduct from './components/allproduct/AllProduct';
-import Cart from './components/cart/Cart';
+import AllProduct from './pages/AllProduct';
+import Cart from './pages/Cart';
+import ProductDetails from './pages/ProductDetails';
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
     {
       path: "/allproduct",
       element: <AllProduct />
+    },
+    {
+      path: "/productdetails",
+      element: <ProductDetails />
     },
     {
       path: "/cart",

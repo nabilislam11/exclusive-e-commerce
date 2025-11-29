@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Container from '../container/Container'
 import { Link } from 'react-router'
-import ProductCard from '../local/ProductCard'
 import axios from 'axios';
+import Container from '../components/container/Container';
+import ProductCard from '../components/local/ProductCard';
 
 
 const AllProduct = () => {
