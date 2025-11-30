@@ -1,11 +1,48 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Container from '../components/container/Container'
 import todays1 from '../assets/todays1.png'
 
 import { FiMinus, FiPlus, FiRefreshCcw, FiRefreshCw } from 'react-icons/fi'
 import { CiDeliveryTruck, CiHeart } from 'react-icons/ci'
+import axios from 'axios'
+import { useParams } from 'react-router'
+import { RatingStars } from '../components/local/ProductCard'
+import { useDispatch } from 'react-redux'
+import { cartDetails } from '../slice/cartSlice'
+
 
 const ProductDetails = () => {
+    const { id } = useParams()
+    const dispatch = useDispatch()
+    const [product, setProduct] = useState([]);
+    const fetchProduct = async () => {
+        try {
+            const { data } = await axios.get
+                (`http://localhost:3000/api/v1/product/get-singleproduct/${id}`);
+            setProduct(data.data)
+
+
+
+
+        } catch (error) {
+            console.log(error);
+            console.log(error.message);
+
+
+
+        }
+    }
+    const handleBuy = () => {
+        dispatch(cartDetails(product))
+
+
+    }
+    useEffect(() => {
+        fetchProduct()
+
+    }, [])
+    console.log(product);
+
 
     return (
         <div>
@@ -17,7 +54,7 @@ const ProductDetails = () => {
                         <p>/</p>
                         <a className='font-secondary  font-normal text-[14px] leading-[21px]' href="">Type</a>
                         <p>/</p>
-                        <a className='font-secondary  font-normal text-[14px] leading-[21px]' href="">product name</a>
+                        <a className='font-secondary  font-normal text-[14px] leading-[21px]' href="">{product.name}</a>
 
                     </div>
                     {/* img part */}
@@ -28,26 +65,26 @@ const ProductDetails = () => {
 
                             {/* side img */}
                             <div className=" flex flex-col gap-y-4">
-                                <img className='w-[170px]  h-[138px] object-cover rounded-4  ' src={todays1} alt="" />
-                                <img className='w-[170px]  h-[138px] object-cover rounded-4  ' src={todays1} alt="" />
-                                <img className='w-[170px]  h-[138px] object-cover rounded-4  ' src={todays1} alt="" />
-                                <img className='w-[170px]  h-[138px] object-cover rounded-4  ' src={todays1} alt="" />
+                                <img className='w-[170px]  h-[138px] object-cover rounded-4  ' src={product.image} alt="" />
+                                <img className='w-[170px]  h-[138px] object-cover rounded-4  ' src={product.image} alt="" />
+                                <img className='w-[170px]  h-[138px] object-cover rounded-4  ' src={product.image} alt="" />
+                                <img className='w-[170px]  h-[138px] object-cover rounded-4  ' src={product.image} alt="" />
                             </div>
                             {/* main img */}
 
-                            <img className='w-[500px]  ' src={todays1} alt="" />
+                            <img className='w-[500px]  ' src={product.image} alt="" />
 
                         </div>
                         {/* details part */}
                         <div className="w-[30%]">
                             <div className="flex flex-col gap-y-4">
-                                <h2 className='font-semibold font-primary text-[24px] leading-6  tracking-[3%]   '>Havic HV G-92 Gamepad</h2>
-                                <a href="">rating  </a>
+                                <h2 className='font-semibold font-primary text-[24px] leading-6  tracking-[3%]   '>{product.name}</h2>
+                                <RatingStars rating={product.rating} />
                             </div>
                             <div className=" flex flex-col gap-y-6">
-                                <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px'>{`$192`}</p>
+                                <p className='text-[#7D8184] font-secondary font-medium  text-[16px] leading-[24px'>${product.price}</p>
                                 <p className='font-normal  font-secondary  text-[14px] leading-[21px]'>
-                                    PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.
+                                    {product.description}
                                 </p>
                                 <div className="w-[400px] h-[1px] bg-black "></div>
                                 <div className=" flex gap-x-6 ">
@@ -72,7 +109,7 @@ const ProductDetails = () => {
                                         <p className='px-[34px] py-[8px] font-medium font-secondary text-[20px] leading-7  '>2</p>
                                         <a className='bg-red-500 text-white py-[10px] px-[9px] ' href=""><FiPlus size={24} /></a>
                                     </div>
-                                    <button className='py-[10px] px-[48px] bg-red-500 rounded-[4px]'>Buy Now</button>
+                                    <button onClick={handleBuy} className='py-[10px] px-[48px] bg-red-500 rounded-[4px]'>Buy Now</button>
                                     <div className=" border py-[11px] px-[10px]  rounded-[4px] ">
                                         <a href="">  <CiHeart size={25} /></a>
                                     </div>

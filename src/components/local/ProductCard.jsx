@@ -7,7 +7,7 @@ import { CiStar } from "react-icons/ci"
 
 
 
-const RatingStars = ({ rating }) => {
+export const RatingStars = ({ rating }) => {
     const fullRating = Math.floor(rating) || 0
     const halfRating = (rating % 1 >= 0.5)
     const emptyRating = 5 - fullRating - (halfRating ? 1 : 0)

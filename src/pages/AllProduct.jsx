@@ -10,7 +10,6 @@ const AllProduct = () => {
     const [totalData, setTotalData] = useState(0)
     const [currentpage, setCurrentPage] = useState(1) || 1
     const [productPerPage, setProductPerPage] = useState(2)
-    console.log("hello")
     const fetchProduct = async () => {
         try {
             //("http://localhost:3000/api/v1/product/get-allproduct")
@@ -62,7 +61,7 @@ const AllProduct = () => {
                 <div className="pt-2.5 pb-20 ">
                     <h3 className=' pb-2.5'>Home/Shop</h3>
                     <div className="flex justify-between ">
-
+                        {/* sidebar Category */}
                         <div className="w-1/5 ">
                             <div className="">
                                 <h1 className=' flex justify-between  items-center font-primary  font-semibold   text-[25px]'> Shop by Category</h1>
@@ -95,11 +94,16 @@ const AllProduct = () => {
 
                             </div>
                         </div>
+                        {/* All product */}
                         <div className="w-4/5">
                             <div className="flex flex-wrap justify-between  ">
                                 {
                                     product.map((items) => (
-                                        <ProductCard key={items._id} items={items}></ProductCard>
+                                        <Link to={`/productdetails/${items._id}`} className="">
+                                            <ProductCard key={items._id} items={items}></ProductCard>
+
+
+                                        </Link>
                                     ))
                                 }
                             </div>
