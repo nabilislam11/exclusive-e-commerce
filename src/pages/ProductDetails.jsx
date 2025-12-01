@@ -33,6 +33,7 @@ const ProductDetails = () => {
         }
     }
     const handleBuy = () => {
+        console.log("buying", product)
         dispatch(cartDetails(product))
 
 
