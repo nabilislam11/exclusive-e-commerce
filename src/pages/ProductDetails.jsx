@@ -8,7 +8,7 @@ import axios from 'axios'
 import { useParams } from 'react-router'
 import { RatingStars } from '../components/local/ProductCard'
 import { useDispatch } from 'react-redux'
-import { cartDetails } from '../slice/cartSlice'
+import { carttotal } from '../slice/cartSlice'
 
 
 const ProductDetails = () => {
@@ -21,22 +21,14 @@ const ProductDetails = () => {
                 (`http://localhost:3000/api/v1/product/get-singleproduct/${id}`);
             setProduct(data.data)
 
-
-
-
         } catch (error) {
             console.log(error);
             console.log(error.message);
 
-
-
         }
     }
     const handleBuy = () => {
-        console.log("buying", product)
-        dispatch(cartDetails(product))
-
-
+        dispatch(carttotal(product))
     }
     useEffect(() => {
         fetchProduct()

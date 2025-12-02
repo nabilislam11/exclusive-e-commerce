@@ -1,10 +1,14 @@
 import React from 'react'
-import { CiSearch } from "react-icons/ci";
+import { CiHeart, CiSearch, CiShoppingCart, CiUser } from "react-icons/ci";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Container from '../container/Container';
 import { Link } from 'react-router';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
+  const data = useSelector((state) => state.cartInfo.value)
+  console.log(data);
+
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Contact" },
@@ -41,6 +45,18 @@ const Navbar = () => {
               <div className="bg-gray-100  flex items-center gap-x-8 rounded ">
                 <input className='text-[#363738] py-[10px] pl-[20px] ' type="text" placeholder='What are you looking for?' />
                 <CiSearch className=' pr-3 text-black size-10 ' />
+              </div>
+              <div className="flex items-center gap-x-[16px] ">
+                <div><CiHeart size={32} /></div>
+
+                <Link to={"/cart"} className=' relative'>
+                  <CiShoppingCart size={32} />
+                  {
+                    data.length > 0 &&
+                    <p className='absolute top-[0] left-[25px] font-medium text-white py-[1px] px-[10px] bg-red-500 rounded-full animate-bounce   '>{data.length}</p>
+                  }
+                </Link>
+                <div><CiUser size={32} /></div>
               </div>
 
             </div>
