@@ -7,6 +7,8 @@ import { AiOutlineMinus } from "react-icons/ai";
 import { FiPlus } from "react-icons/fi";
 import { useDispatch } from 'react-redux'
 import { cartQuantity } from '../slice/cartSlice';
+import { Link } from 'react-router';
+import CheackOut from './CheckOut';
 
 const Cart = () => {
     const dispatch = useDispatch()
@@ -93,7 +95,7 @@ const Cart = () => {
                     <div className=" text-end px-[40px] py-[24px] rounded-[4px] my-[40px] ">
                         Total : {total}
                     </div>
-                    <div className=" w-[50%] ms-auto flex  justify-center items-center  text-white bg-black py-[10px] px-[15px] rounded-[10px] font-medium  font-primary  ">Ceack out</div>
+                    <Link to={"/checkout"} className=" w-[50%] ms-auto flex  justify-center items-center  text-white bg-black py-[10px] px-[15px] rounded-[10px] font-medium  font-primary  ">Check out</Link>
 
 
                 </div>
