@@ -7,16 +7,17 @@ import { AiOutlineMinus } from "react-icons/ai";
 import { FiPlus } from "react-icons/fi";
 import { useDispatch } from 'react-redux'
 import { cartQuantity } from '../slice/cartSlice';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import CheackOut from './CheckOut';
 import "../cartscroll.css"
 const Cart = () => {
     const dispatch = useDispatch()
+    const navigate = useNavigate()
     const [couponText, setCouponText] = useState();
     const [discount, setDiscount] = useState(0);
-    const product = useSelector((state) => state.cartInfo.value)
+    const product = useSelector((state) => state?.cartInfo?.value)
     console.log(product);
-    const grandTotal = product.reduce((prev, current) => prev + (current.price * current.cartQun), 0)
+    const grandTotal = product?.reduce((prev, current) => prev + (current.price * current.cartQun), 0)
     const total = grandTotal - discount
 
     const handleCoupon = () => {
@@ -36,6 +37,10 @@ const Cart = () => {
 
 
         dispatch(cartQuantity({ ...item, type: "decrement" }))
+    }
+    const handleCheckout = () => {
+        navigate("/checkout", { state: { totalprice: total } })
+
     }
     return (
         <>
@@ -142,12 +147,11 @@ const Cart = () => {
                                 <p>${total}</p>
                             </div>
 
-                            <Link
-                                to="/checkout"
+
+                            <button onClick={handleCheckout}
                                 className="mt-4 block text-center bg-black text-white py-3 rounded-xl hover:bg-gray-800 font-medium"
-                            >
-                                Proceed to Checkout
-                            </Link>
+                            >Proceed to Checkout    </button>
+
                         </div>
                     </div>
                 </div>

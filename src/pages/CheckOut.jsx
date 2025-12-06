@@ -3,10 +3,15 @@
 import React, { useState } from 'react'
 import Container from '../components/container/Container'
 import { useSelector } from 'react-redux';
-
+import axios from 'axios'
+import { useLocation } from 'react-router';
 const CheckOut = () => {
     const product = useSelector((state) => state.cartInfo.value)
     console.log(product);
+    const pricedata = useLocation();
+    const totals = pricedata.state.totalprice;
+
+
 
     const [checkoutDetails, setCheckoutDetails] = useState({
         firstName: "",
@@ -24,8 +29,24 @@ const CheckOut = () => {
         });
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
         console.log(checkoutDetails)
+        const { data } = await axios.post("http://localhost:3000/api/v1/order/payment", {
+            firstName: checkoutDetails.firstName,
+            lastName: checkoutDetails.lastName,
+            email: checkoutDetails.email,
+            phoneNumber: checkoutDetails.phoneNumber,
+            address: checkoutDetails.address,
+            city: checkoutDetails.city,
+            postCode: checkoutDetails.postCode,
+            totalPrice: totals,
+            products: product,
+        })
+
+        console.log(data?.gatewayPageURL);
+        window.location.href = data?.gatewayPageURL;
+
+
     }
     const [error, setError] = useState("");
     return (
